@@ -43,13 +43,15 @@ if ( 'none' == $options[ 'theme' ] ) {
 
 	if ( 'ASC' == $options['order'] && $comment_count > 3 && 'iframe' != $options['theme'] ) {
 		$comment_count_area = sprintf(
-			'<h3 class="comment-count-area">%1s <a href="#reply-title">%2s</a></h3>',
+			'<h3 class="comment-count-area comment-total-%1d">%2s <a href="#reply-title">%3s</a></h3>',
+			$comment_count,
 			$comment_count_message,
 			$options['before_text']
 		);
 	} else {
 		$comment_count_area = sprintf(
-			'<h3 class="comment-count-area">%1s</h3>',
+			'<h3 class="comment-count-area comment-total-%1$d">%2s</h3>',
+			$comment_count,
 			$comment_count_message
 		);
 	}
