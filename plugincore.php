@@ -11,8 +11,8 @@
  * Plugin Name: Epoch
  * Version: 1.0.14
  * Plugin URI:  http://gopostmatic.com/epoch
- * Description: Native commenting made realtime, mobile, CDN and Cache friendly, and full of SEO mojo as well. Commenting perfected.
- * Author:      Postmatic
+ * Description: (Fork, do not update from wordpress.org) Native commenting made realtime, mobile, CDN and Cache friendly, and full of SEO mojo as well. Commenting perfected.
+ * Author:      Postmatic / William Turrell
  * Author URI:  https://gopostmatic.com/
  * Text Domain: epoch
  * License:     GPL-2.0+
