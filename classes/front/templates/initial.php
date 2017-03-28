@@ -50,7 +50,7 @@ if ( 'none' == $options[ 'theme' ] ) {
 		);
 	} else {
 		$comment_count_area = sprintf(
-			'<h3 class="comment-count-area comment-total-%1$d">%2s</h3>',
+			'<h3 class="comment-count-area comment-total-%1d">%2s</h3>',
 			$comment_count,
 			$comment_count_message
 		);
