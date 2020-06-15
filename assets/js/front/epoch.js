@@ -41,9 +41,12 @@ jQuery( document ).ready( function ( $ ) {
              * Start the system
              */
             app.set_width();
-            app.comments_open();
+            // Disabled, June 2020
+            // app.comments_open();
             app.initial_load = true;
-            app.comment_count( false );
+
+            // Disabled, June 2020
+            // app.comment_count( false );
             window.onresize = function(event) {
                 app.set_width();
             };

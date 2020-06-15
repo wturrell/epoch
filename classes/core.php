@@ -309,7 +309,7 @@ class core {
 		}
 
 		//main scripts and styles
-		wp_enqueue_script( 'epoch', EPOCH_URL . "/assets/js/front/epoch{$suffix}.js", array( 'jquery', 'epoch-handlebars' ), $version, true );
+		wp_enqueue_script( 'epoch', EPOCH_URL . "/assets/js/front/epoch.js", array( 'jquery', 'epoch-handlebars' ), $version, true );
 		if ( 'none' != $theme ) {
 			wp_enqueue_style( "epoch-{$theme}", EPOCH_URL . "/assets/css/front/{$theme}{$suffix}.css", $version, true  );
 		}

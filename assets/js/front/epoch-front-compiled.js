@@ -116,9 +116,12 @@ jQuery( document ).ready( function ( $ ) {
              * Start the system
              */
             app.set_width();
-            app.comments_open();
+            // Disabled, June 2020
+            // app.comments_open();
             app.initial_load = true;
-            app.comment_count( false );
+
+            // Disabled, June 2020
+            // app.comment_count( false );
             window.onresize = function(event) {
                 app.set_width();
             };
@@ -178,12 +181,14 @@ jQuery( document ).ready( function ( $ ) {
 
                     }
 
+
+
                     //parse if comment isn't in DOM already
                     if ( null == document.getElementById( 'comment-' + comment.comment_ID ) ) {
                         html = app.parse_comment( comment );
                         var comment_el = document.getElementById( 'comment-' + comment.comment_ID );
 
-                        app.put_comment_in_dom( html, comment.comment_parent, comment.depth, id );
+                        app.put_comment_in_dom( html, comment.comment_parent, comment.depth, comment.comment_ID );
 
 
                         var comment_el = document.getElementById( 'comment-' + comment.comment_ID );
